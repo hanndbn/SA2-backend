@@ -1,0 +1,17 @@
+.modal(tabindex='-1', role='dialog')
+	.modal-dialog
+		.modal-content
+			.modal-header
+				button.close(type='button', data-dismiss='modal', aria-hidden='true') &times;
+				h4.id_errorTitle.modal-title Create new cv field
+			.modal-body.id_title
+				.form-group
+					label Title
+					textarea.id_title(type="text",row='3')
+				.form-group
+					label Public
+					input(type='checkbox').id_public
+			.modal-footer
+				button.btn.id_clear(type='button') Clear
+				button.btn(type='button', data-dismiss='modal') Cancel
+				button.btn.btn-default.id_save(type='button') Save

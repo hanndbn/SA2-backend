@@ -1,0 +1,485 @@
+﻿<div>
+<div class="id_emptylist">
+	<h2 class="grey" style="padding-left: 100px; padding-top: 150px">
+		<i> Không tìm thấy dữ liệu nào </i>
+	</h2>
+</div>
+
+<form class="row id_candidatesuperheader pull-left">
+	<div class="form-group col-md-12" style="margin-bottom: 0;">
+		<span class="input-icon">
+          <input type="text" placeholder="tìm kiếm ứng viên ..." class="id_searchbox form-control">
+          <i class="fa fa-search icon-search"> </i>
+        </span>
+
+		<div class="btn-group">
+			<button type="button" class="id_reply btn-sm btn" data-original-title="Gửi thư cho ứng viên" data-container="body" data-toggle="tooltip" data-placement="bottom">
+				<i class="fa fa-reply bigger-120">
+
+				</i> Trả lời
+			</button>
+			<button type="button" class="btn-sm btn id_export" data-original-title="Xuất CV ra file Excel" data-container="body" data-toggle="tooltip" data-placement="bottom">
+				<i class="fa fa-file-excel-o bigger-120"> </i> Xuất
+			</button>
+			<button type="button" class="btn-sm btn jd_junkbtn" data-original-title="Chuyển vào thùng 'Rác'" data-container="body" data-toggle="tooltip" data-placement="bottom">
+				<i class="fa fa-trash bigger-120"> </i> Xóa
+			</button>
+			<button type="button" class="btn-sm btn id_test" data-original-title="Mở test IQ và tiếng anh" data-container="body" data-toggle="tooltip" data-placement="bottom">
+				<i class="fa fa-pencil bigger-120"> </i> Mở test
+			</button>
+			<button type="button" class="btn-sm btn id_download" data-original-title="Download CV" data-container="body" data-toggle="tooltip" data-placement="bottom">
+				<i class="fa fa-download bigger-120"> </i> Tải
+			</button>
+		</div>
+		<div class="action-buttons pull-right">
+			<a class="light-grey"> <i class="ace-icon fa fa-list-ol id_switchview "> </i> </a>
+		</div>
+
+		    <span class=" pull-right hidden" style="margin-right: 14px; ">
+          <label> <input class="id_duyet ace" type="checkbox" checked>
+
+            <span class="lbl">
+              Hiển thị chưa duyệt
+            </span> </label>
+        </span>
+	</div>
+</form>
+
+<div class="id_candidateheader id_ffilter">
+
+	<div class="form-group col-md-2">
+		<label style="margin-top: 0px;"> Trạng thái tuyển dụng
+			<span class="btn-group id_filter">
+				<a data-toggle="dropdown" class=" dropdown-toggle id_status"> <i class="fa fa-circle blue"> </i> Tất cả </a>
+				<ul class="dropdown-menu dropdown-danger">
+					<li>
+						<a class="id_tc"> <i class="fa fa-circle blue"> </i> Tất cả </a>
+					</li>
+					<li>
+						<a class="id_cpv"> <i class="fa fa-circle green"> </i> Chưa xem </a>
+					</li>
+					<li>
+						<a class="id_dx"> <i class="fa fa-circle red"> </i> Đã xem </a>
+					</li>
+					<li>
+						<a class="id_lcv"> <i class="fa fa-circle  orange"> </i> Loại - CV </a>
+					</li>
+					<li>
+						<a class="id_ltbp"> <i class="fa fa-circle grey"> </i> Loại - TBP </a>
+					</li>
+					<li>
+						<a class="id_tt"> <i class="fa fa-circle pink "> </i> Thi tuyển </a>
+					</li>
+					<li>
+						<a class="id_ltt"> <i class="fa fa-circle light-red"> </i> Loại - Thi tuyển </a>
+					</li>
+					<li>
+						<a class="id_pv"> <i class="fa fa-circle light-blue"> </i> Phỏng vấn </a>
+					</li>
+					<li>
+						<a class="id_dpvtt"> <i class="fa fa-circle light-green"> </i> Đã phỏng vấn - Trúng tuyển </a>
+					</li>
+					<li>
+						<a class="id_dpvdp"> <i class="fa fa-circle light-orange"> </i> Đã phỏng vấn - Dự phòng </a>
+					</li>
+					<li>
+						<a class="id_dpvl"> <i class="fa fa-circle purple"> </i> Đã phỏng vấn - Loại </a>
+					</li>
+				</ul>
+			</span> </label>
+
+	</div>
+
+	<div class="form-group col-md-1">
+		<label style="margin-top: 0px;">ENG<input type="text" class="form-control id_filtereng" placeholder="ENG"/> </label>
+
+	</div>
+	<div class="form-group col-md-1">
+		<label style="margin-top: 0px;">IQ<input type="text" class="form-control id_filteriq" placeholder="IQ"/> </label>
+
+	</div>
+	<div class="form-group col-md-1">
+		<label style="margin-top: 0px;">K. nghiệm<select class="form-control id_filterexp">
+			<option value=">=0">
+				Bất kỳ
+			</option>
+			<option value="=0">
+				Dưới 1 năm
+			</option>
+			<option value=">1">
+				Trên 1 năm
+			</option>
+			<option value="&gt;2">
+				Trên 2 năm
+			</option>
+			<option value="&gt;3">
+				Trên 3 năm
+			</option>
+			<option value="&gt;5">
+				Trên 5 năm
+			</option>
+		</select> </label>
+	</div>
+	<div class="form-group col-md-2">
+		<label style="margin-top: 0px;">Chuyên ngành<select class="form-control id_filterspec">
+			<option value="">
+				Bất kỳ
+			</option>
+			<option value="Lập trình viên">
+				Lập trình viên
+			</option>
+			<option value="Nhân viên kinh doanh">
+				Nhân viên kinh doanh
+			</option>
+			<option value="PR / Marketting">
+				PR / Marketting
+			</option>
+			<option value="Hành chính nhân sự">
+				Hành chính nhân sự
+			</option>
+			<option value="QA / TEST">
+				QA / TEST
+			</option>
+			<option value="Kế toán">
+				Kế toán
+			</option>
+			<option value="Khác">
+				Khác
+			</option>
+		</select> </label>
+	</div>
+	<div class="form-group col-md-1">
+		<label style="margin-top: 0px;">C. Nghệ<select class="form-control id_filtertech">
+			<option value="">
+				Bất kỳ
+			</option>
+			<option>
+				Java
+			</option>
+			<option>
+				.NET
+			</option>
+			<option>
+				PHP
+			</option>
+			<option>
+				Python
+			</option>
+		</select> </label>
+	</div>
+
+	<div class="form-group col-md-1">
+		<label style="margin-top: 0px;">Lương <select class="form-control id_filtersalary">
+			<option value="">
+				Bất kỳ
+			</option>
+			<option value="Thỏa thuận">
+				Thỏa thuận
+			</option>
+			<option value="Dưới 1 triệu">
+				Dưới 1 triệu
+			</option>
+			<option value="Dưới 2 triệu">
+				Dưới 2 triệu
+			</option>
+			<option value="Dưới 3 triệu">
+				Dưới 3 triệu
+			</option>
+			<option value="Dưới 4 triệu">
+				Dưới 4 triệu
+			</option>
+			<option value="Dưới 5 triệu">
+				Dưới 5 triệu
+			</option>
+			<option value="Dưới 6 triệu">
+				Dưới 6 triệu
+			</option>
+			<option value="Dưới 7 triệu">
+				Dưới 7 triệu
+			</option>
+			<option value="Dưới 8 triệu">
+				Dưới 8 triệu
+			</option>
+			<option value="Dưới 9 triệu">
+				Dưới 9 triệu
+			</option>
+			<option value="Dưới 10 triệu">
+				Dưới 10 triệu
+			</option>
+			<option value="Dưới 15 triệu">
+				Dưới 15 triệu
+			</option>
+			<option value="Dưới 20 triệu">
+				Dưới 20 triệu
+			</option>
+			<option value="Dưới 25 triệu">
+				Dưới 25 triệu
+			</option>
+			<option value="Dưới 30 triệu">
+				Dưới 30 triệu
+			</option>
+			<option value="Trên 30 triệu">
+				Trên 30 triệu
+			</option>
+		</select> </label>
+
+	</div>
+	<div class="form-group col-md-1">
+		<label style="margin-top: 0px;"> Trình độ <select class="form-control id_filterlevel">
+			<option value="">
+				Bất kỳ
+			</option>
+			<option value="Trên đại học">
+				Trên đại học
+			</option>
+			<option value="Đại học">
+				Đại học
+			</option>
+			<option value="Cao đẳng">
+				Cao đẳng
+			</option>
+			<option value="Trung cấp">
+				Trung cấp
+			</option>
+			<option value="THPT">
+				THPT
+			</option>
+			<option value="Khác">
+				Khác
+			</option>
+		</select> </label>
+
+	</div>
+</div>
+</div>
+<table style="border-top: none;">
+<thead class="id_tableheader">
+<tr>
+	<td class="center checkboxcontainer" style="width: 1px">
+		<label> <input type="checkbox" class="ace id_checkall">
+            <span class="lbl">
+            </span> </label>
+	</td>
+	<td style="width: 240px" class="candidate_hiddenable hidden">
+		<b> Họ tên </b>
+	</td>
+	<td style="width: 250px">
+		<b> Họ tên </b>
+	</td>
+	<td style="width: 40px" class="candidate_hiddenable">
+		<b> ENG </b>
+		<!---->
+	</td>
+	<td style="width: 40px" class="candidate_hiddenable">
+		<b> IQ </b>
+		<!--
+<input type="text" class="form-control id_filteriq" placeholder="IQ" />
+-->
+	</td>
+	<td style="width: 70px" class="candidate_hiddenable">
+		<b> Vị trí </b>
+	</td>
+	<td class="candidate_hiddenable">
+		<b> Kinh nghiệm </b>
+		<!--
+<input type="text" class="form-control id_filterexp" placeholder="Kinh nghiệm" />
+-->
+	</td>
+	<td class="candidate_hiddenable">
+		<b> Chuyên ngành </b>
+		<!--
+<input type="text" class="form-control id_filterspec" placeholder="Chuyên ngành" />
+-->
+	</td>
+	<td class="candidate_hiddenable">
+		<b> Công nghệ </b>
+		<!---->
+	</td>
+	<td class="candidate_hiddenable">
+		<b> Lương </b>
+		<!---->
+	</td>
+	<td class="candidate_hiddenable">
+		<b> Trình độ </b>
+		<!---->
+	</td>
+</tr>
+</thead>
+<tbody class="id_candidatetem" draggable="true" tabindex="0">
+<tr>
+	<td class="center checkboxcontainer">
+		<label> <input type="checkbox" class="ace id_cb">
+          <span class="lbl">
+          </span> </label>
+	</td>
+	<td class="candidate_hiddenable hidden">
+		<div>
+
+		</div>
+	</td>
+	<td>
+		<div>
+			<div>
+            <span>
+              <i class="light-grey fa fa-reply id_reply"> </i>
+              
+              
+              <i class="light-grey hidden"> [
+                <span class="id_id">
+                  1
+                </span> ] </i>
+                 <span class="id_ctime hidden">29-10-1992</span>
+
+              <span class="action-buttons" style="display:inline-flex">
+
+                <a class="light-grey id_star" data-original-title="Ứng viên tiềm năng" data-container="body" data-toggle="tooltip" data-placement="bottom">
+	                <i class=" fa fa-star"></i> </a>
+                <span class="btn-group" style="vertical-align: baseline;">
+						<span>
+                  	<a data-toggle="dropdown" class="dropdown-toggle id_jobstatus" style="width: 12px" data-original-title="Trạng thái ứng tuyển" data-container="body" data-toggle="tooltip" data-placement="bottom">
+		                  <i class="fa fa-circle green"></i> </a>
+                  	<ul class="dropdown-menu dropdown-danger dropdown-menu-right">
+		                  <li>
+			                  <a class="id_cpv"> <i class="fa fa-circle green"></i> Chưa xem</a>
+		                  </li>
+		                  <li>
+			                  <a class="id_dx"> <i class="fa fa-circle red"></i> Đã xem</a>
+		                  </li>
+		                  <li>
+			                  <a class="id_lcv"> <i class="fa fa-circle orange"> </i> Loại - CV</a>
+		                  </li>
+		                  <li>
+			                  <a class="id_ltbp"> <i class="fa fa-circle grey"></i> Loại - TBP </a>
+		                  </li>
+		                  <li>
+			                  <a class="id_tt"> <i class="fa fa-circle pink"></i> Thi tuyển </a>
+		                  </li>
+						<li>
+							<a class="id_ltt"> <i class="fa fa-circle light-red"> </i> Loại - Thi tuyển </a>
+						</li>
+						<li>
+							<a class="id_pv"> <i class="fa fa-circle light-blue"> </i> Phỏng vấn </a>
+						</li>
+						<li>
+							<a class="id_dpvtt"> <i class="fa fa-circle light-green"> </i> Đã phỏng vấn - Trúng tuyển </a>
+						</li>
+						<li>
+							<a class="id_dpvdp"> <i class="fa fa-circle light-orange"> </i> Đã phỏng vấn - Dự phòng </a>
+						</li>
+						<li>
+							<a class="id_dpvl"> <i class="fa fa-circle purple"> </i> Đã phỏng vấn - Loại </a>
+						</li>
+	                  </ul>
+                	</span>
+					 </span>
+ 					<a class="light-grey id_edit" data-original-title="Nhập thông tin" data-container="body" data-toggle="tooltip" data-placement="bottom">
+					   <i class=" fa fa-pencil"></i> </a>
+              </span>
+              <span class="action-buttons can_extraaction" style="position: relative;">
+						<span data-toggle="dropdown" class="dropdown-toggle">
+							<a data-toggle="dropdown" class="dropdown-toggle light-grey id_canmoreaction" style="width: 12px" data-original-title="Thêm" data-container="body" data-toggle="tooltip" data-placement="bottom">
+								<i class="fa fa-gear"></i> </a>
+							<ul class="dropdown-menu dropdown-danger dropdown-menu-right">
+								<li>
+									<a class="id_viewtag light-grey"> <i class="fa fa-tag"></i> Xem tag </a>
+								</li>
+								<li>
+									<a class="id_actionmailcan id_history"> <i class="fa fa-envelope orange"></i> Hòm thư </a>
+								</li>
+
+								<li>
+									<a class="id_actiondownloadcan"> <i class="fa fa-download"> </i> Tải CV </a>
+								</li>
+								<li>
+									<a class="id_actionexportcan"> <i class="fa fa-file-pdf-o"></i> Xuất thông tin </a>
+								</li>
+								<li class="disabled ">
+									<a class="id_actionlogcan"> <i class="fa fa-history"></i> Lịch sử </a>
+								</li>
+								<li>
+									<a class="id_actionremovecan"> <i class="fa fa-remove red"></i> Xóa </a>
+								</li>
+							</ul>
+
+						</span>
+					</span>
+              <i class="id_gender fa fa-male light-grey" style="cursor: default" data-original-title="Giới tính" data-container="body" data-toggle="tooltip" data-placement="bottom"></i>
+
+              <span class="id_name selectable">
+                ??
+              </span>
+              
+              <span class="id_newlbl hidden label label-danger selectable" style="font-size: 9px;padding: 1px;margin-left: 4px;">
+                <span class="n_unread">
+                </span>
+                mới
+              </span>
+              <span class="action-buttons hidden candidate_showable  " style="left: 216px;position: absolute;">
+                <a class="light-grey id_unread"> <i class=" fa fa-check"> </i> </a>
+                <a class="light-grey id_trash red"> <i class=" fa fa-trash"> </i> </a>
+              </span>
+            </span>
+			</div>
+			<div class="hidden">
+            
+            <span class="id_email ">
+              thanhpk@live.com
+            </span>
+			</div>
+			<p>
+            <span class="id_phone hidden">
+              01696079197
+            </span>
+			</p>
+
+			<p></p>
+		</div>
+	</td>
+	<td style="text-align:center; vertical-align:middle" class="candidate_hiddenable ">
+        <span class="id_eng">
+          20
+        </span>
+	</td>
+	<td style="text-align:center; vertical-align:middle" class="candidate_hiddenable">
+        <span class="id_iq">
+          22
+        </span>
+	</td>
+	<td style="vertical-align: middle" class="candidate_hiddenable">
+        <span class="btn-group id_job " data-original-title="999" data-container="body" data-toggle="tooltip" data-placement="bottom" title="">
+        </span>
+	</td>
+	<td class="candidate_hiddenable ">
+		<p class="id_exp selectable">
+			2 năm làm việc tại FSOFT </p>
+	</td>
+	<td class="candidate_hiddenable ">
+		<p class="id_spec selectable">
+			Kinh tế đối ngoại </p>
+	</td>
+	<td class="candidate_hiddenable ">
+		<p class="id_tech selectable">
+			Java, C# </p>
+	</td>
+	<td class="candidate_hiddenable ">
+		<p class="id_salary selectable">
+			2 triệu </p>
+	</td>
+	<td class="candidate_hiddenable ">
+		<p class="id_level selectable">
+			Đại học </p>
+	</td>
+</tr>
+<tr class="candidate_hiddenable">
+	<td colspan="14" class="id_tag">
+		<div class="id_commentanchor"></div>
+	</td>
+</tr>
+</tbody>
+</table>
+
+<div class="id_side">
+	HA HA HA HA HAHAHAH
+</div>
+
+</div>

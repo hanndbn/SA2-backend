@@ -1,0 +1,14 @@
+.container-fluid
+	.row
+		.col-sm-2
+				.id_header
+				.id_sidebar
+		.col-sm-10(style="padding-top: 20px;border-left: 1px solid whitesmoke")
+			div.row
+				div.hidden.id_waiting(style="opacity: 0.5;background-color: whitesmoke;position: fixed;top: 0px;width: 100%;z-index: 30;height: 100%;left:0px")
+					.progress.progress-striped.active(style="position:absolute; top: 75%; left:40%; width:20%; height: 20px")
+						.progress-bar.id_progress( role="progressbar", aria-valuenow="45" ,aria-valuemin="0" ,aria-valuemax="100", style="width: 0%")
+							span.sr-only 100% Complete
+					div(style="background: url('res/Image/wait32x32.gif') no-repeat center;width: 100%; height:100%")
+				.col-sm-12.id_content
+	.row

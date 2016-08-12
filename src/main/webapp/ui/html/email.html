@@ -1,0 +1,92 @@
+<div>
+	<div>
+		<form class="id_emailitem" style="margin-bottom: 50px; padding-left: 2px">
+			<p class="id_kcmm" style="color: grey">Không có email mới</p>
+			<span class="id_time"></span>
+			<span class="id_subject"></span>
+
+			<div class="id_body"></div>
+			<div class="long-div" style="position: absolute; left: 40%;top: 40%; ">
+				<img class="loading" src="/ui/img/load2128.gif" style="display: none"/>
+			</div>
+		</form>
+	</div>
+</div>
+<script>
+	function displayMessage(evt)
+	{
+		clear();
+		if (evt.data == "wait")
+		{
+			dom.find('id_kcmm').style.display = 'none';
+			dom.find('loading').style.display = 'block';
+			return;
+		}
+
+		dom.find('loading').style.display = 'none';
+		var data;
+		var message;
+		if (evt.origin !== document.location.origin)
+		{
+			alert("You are not worthy");
+		}
+		else
+		{
+			data = JSON.parse(evt.data);
+			if (data.id == '')
+			{
+				dom.find('id_kcmm').style.display = 'block';
+				dom.find('loading').style.display = 'none';
+				return;
+
+			}
+			add(data);
+		}
+
+	}
+
+	if (window.addEventListener)
+	{
+		window.addEventListener("onmessage", displayMessage, false);
+		// For standards-compliant web browsers
+		window.addEventListener("message", displayMessage, false);
+	}
+	else
+	{
+		window.attachEvent("onmessage", displayMessage);
+	}
+
+	var dom = document;
+	dom.find = function (s)
+	{
+		return document.getElementsByClassName(s)[0];
+	};
+
+	function add(item)
+	{
+		var tem = document;
+		tem.find = function (s)
+		{
+			return document.getElementsByClassName(s)[0];
+		};
+
+		tem.find('id_time').innerHTML = (item.sendtime.hourOfDay + ":" + item.sendtime.minute + ":" + item.sendtime.second + "   " + item.sendtime.dayOfMonth + "/" + item.sendtime.month + "/" + item.sendtime.year);
+		tem.find('id_body').innerHTML = (item.body);
+		tem.find('id_subject').innerHTML = (item.subject);
+
+	}
+
+	function clear()
+	{
+		var tem = document;
+		tem.find = function (s)
+		{
+			return document.getElementsByClassName(s)[0];
+		};
+
+		tem.find('id_time').innerHTML = ""; //(item.sendtime.hourOfDay + ":" + item.sendtime.minute + ":" + item.sendtime.second + "   " + item.sendtime.dayOfMonth + "/" + item.sendtime.month + "/" + item.sendtime.year);
+		tem.find('id_body').innerHTML = "";
+		tem.find('id_subject').innerHTML ="";
+	}
+
+</script>

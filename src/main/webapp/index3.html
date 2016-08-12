@@ -1,0 +1,14 @@
+<head><meta charset="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><meta name="viewport" content="width=device-width, initial-scale=1"/><title>HR PROJECT</title><link href="res/css/bootstrap.min.css" rel="stylesheet"/><link href="app.css" rel="stylesheet"/><script data-main="scripts/main" src="scripts/require.js"></script></head><body><div class="container"><div class="col-xs-2"><div id="here"></div></div><div class="col-xs-2"><div id="here2"></div></div><div class="col-xs-2"><div id="here3"></div></div><div class="row col-xs-12"><div id="here4"></div></div></div><script src="res/jquery.js"></script><script src="res/js/bootstrap.min.js"></script><script src="framework.js"></script><script src="starrating.js"></script><script src="voting.js"></script><script src="actionmenu.js"></script><script src="table.js"></script><script>function setupTable(){
+ tabl.setUpTable(['#','Họ tên','IQ','CV','SUM','Rating','Vote','Action']);
+ for(var i = 1; i < 10; i++)
+ {
+  var vote = new Voting.Plugin($('<div>')[0]);
+  var star = new StarRating.Plugin($('<div>')[0]);
+  var acm = new ActionMenu.Plugin($('<div>')[0]);
+  
+  
+  tabl.addRow([i,'Phạm Kiều Thanh',i*2,i+3,i*3+3,star.element, vote.element, acm.element]);
+ }
+}
+var tabl = new Table.Plugin(document.getElementById('here4'), setupTable);
+</script></body>

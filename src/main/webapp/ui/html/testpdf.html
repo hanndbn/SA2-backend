@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="UTF-8">
+	<title></title>
+	<script src="/ui/js/trang/inputting/pdf.js"></script>
+</head>
+<body>
+<canvas id="the-canvas"></canvas>
+<script>
+	PDFJS.getDocument('/ui/js/trang/inputting/cv.pdf');
+	PDFJS.getDocument('/ui/js/trang/inputting/cv.pdf').then(function(pdf) {
+		pdf.getPage(1).then(function(page) {
+			var scale = 1.5;
+			var viewport = page.getViewport(scale);
+
+			var canvas = document.getElementById('the-canvas');
+			var context = canvas.getContext('2d');
+			canvas.height = viewport.height;
+			canvas.width = viewport.width;
+
+			var renderContext = {
+				canvasContext: context,
+				viewport: viewport
+			};
+			page.render(renderContext);
+		});
+
+
+	});
+
+</script>
+</body>
+</html>

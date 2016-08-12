@@ -1,0 +1,15 @@
+.modal.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel', aria-hidden='true')
+	.modal-dialog
+		.modal-content
+			.modal-header
+				button.close(type='button', data-dismiss='modal', aria-hidden='true') &times;
+				h4.id_errorTitle.modal-title Lỗi
+			.modal-body
+				.row
+					.col-sm-6
+						img(src="res/Image/error.png")
+					.col-sm-6
+						.id_errorMessage
+							| 404 NOT FOUND
+			.modal-footer
+				button.btn.btn-default(type='button', data-dismiss='modal') OK

@@ -1,0 +1,31 @@
+extend index.jade
+block body
+	.col-xs-2
+		#here
+	.col-xs-2
+		#here2
+	.col-xs-2
+		#here3
+	.row.col-xs-12
+		#here4
+append bottom
+	script(src='starrating.js')
+	script(src='voting.js')
+	script(src='actionmenu.js')
+	script(src='table.js')
+	script.
+		function setupTable(){
+			tabl.setUpTable(['#','Họ tên','IQ','CV','SUM','Rating','Vote','Action']);
+			for(var i = 1; i < 10; i++)
+			{
+				var vote = new Voting.Plugin($('<div>')[0]);
+				var star = new StarRating.Plugin($('<div>')[0]);
+				var acm = new ActionMenu.Plugin($('<div>')[0]);
+
+
+				tabl.addRow([i,'Phạm Kiều Thanh',i*2,i+3,i*3+3,star.element, vote.element, acm.element]);
+			}
+		}
+		var tabl = new Table.Plugin(document.getElementById('here4'), setupTable);
+
+		

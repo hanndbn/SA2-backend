@@ -1,0 +1,92 @@
+div
+	.container-fluid(style="z-index: 1000;height:84px;padding:10px;width: 100%;")
+		div
+			nav.col-md-12.navbar.navbar-default(role='navigation',style="border:none; background-color:white")
+				.container
+					.navbar-header
+						button.navbar-toggle(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1')
+							span.sr-only Toggle navigation
+							span.icon-bar
+							span.icon-bar
+							span.icon-bar
+							script(src="slider/slippry.min.js")
+							link(href='slider/slippry.css', rel="stylesheet", type="text/css")
+						a.navbar-brand(href="#", style="height:68px; width:160px; background: url('res/Image/tvi.png') no-repeat;background-position:center")
+
+					// Collect the nav links, forms, and other content for toggling
+					#bs-example-navbar-collapse-1.collapse.navbar-collapse
+						ul.nav.navbar-nav.navbar-right
+							li
+								a(href='#') GIỚI THIỆU
+							li
+								a(href='#') VIỆC LÀM
+							li| 
+								a(href='https://www.facebook.com/vuonuomtinhvan') 
+									span.fa.fa-facebook-square
+									|&nbsp;LIÊN HỆ
+							li.dropdown
+								a.dropdown-toggle(href="#",data-toggle="dropdown") 
+									span.fa.fa-question
+									|&nbsp;TRỢ GIÚP
+									b.caret
+								ul.dropdown-menu
+									li
+										a(href="http://vuonuomtinhvan.com/News/NewsDetail.aspx?ns=55") QUI TRÌNH
+									li
+										a(href="https://www.facebook.com/vuonuomtinhvan") HỎI ĐÁP
+							li
+								a(href='#login') 
+									span.fa.fa-user
+									|&nbsp; ĐĂNG NHẬP
+							li
+								button.id_applybtn.btn.btn-danger(href='#', onclick="window.location.hash='#uploadcv/7'") ỨNG TUYỂN
+					// /.navbar-collapse
+				// /.container-fluid
+	div
+		div.hidden.id_waiting(style="opacity: 0.5;background-color: whitesmoke;position: fixed;top: 0px;width: 100%;z-index: 30;height: 100%;left:0px")
+			.progress.progress-striped.active(style="position:absolute; top: 75%; left:40%; width:20%; height: 20px")
+				.progress-bar.id_progress( role="progressbar", aria-valuenow="45" ,aria-valuemin="0" ,aria-valuemax="100", style="width: 0%")
+					span.sr-only 100% Complete
+			div(style="background: url('res/Image/wait32x32.gif') no-repeat center;width: 100%; height:100%")
+	.id_content.row
+	.container-fluid(style="padding-top: 20px; background-color: #333;color: white;margin-top:10px")
+		footer.container
+			.row
+				.col-md-3
+					h3 Các sản phẩm
+					p 
+						a(href="#") Speedy Apply
+					p
+						a(href="https://www.facebook.com/Xalovansu") xa lộ vạn sự
+				.col-md-3
+					h3 Liên hệ
+					p
+						span.fa.fa-envelope
+						|  vuonuomtinhvan@gmail.com
+					p 
+						a(href="https://www.facebook.com/vuonuomtinhvan")
+							span.fa.fa-facebook-square
+							|  fb/vuonuomtinhvan
+					p
+						a(href="#") Điều khoản sử dụng
+				.col-md-3
+					h3 Hỗ trợ
+					p
+						span.fa.fa-envelope
+						|  speedyapply@gmail.com
+					p
+						span.fa.fa-skype
+						|  speedyapply
+					p 
+						a(href="https://www.facebook.com/vuonuomtinhvan")
+							span.fa.fa-facebook-square
+							|  fb/speedyapply
+				.col-md-3
+					h3 Liên kết
+					a(href="#login").btn.btn-sm.btn-danger
+						span.fa.fa-sign-in
+						|  Đăng nhập
+	.col-md-12
+					p
+						| Thực hiện bởi
+						a(href="http://vuonuomtinhvan.com")  TinhVan Incubator

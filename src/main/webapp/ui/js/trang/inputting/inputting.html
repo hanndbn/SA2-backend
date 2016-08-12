@@ -1,0 +1,230 @@
+﻿<div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="" data-backdrop="static" data-keyboard="false">
+	<div class="modal-dialog " style="width: 90%; padding-bottom: 0px; padding-top: 0px">
+		<div class="modal-content" style="height: 100%">
+			<div class="modal-header" style="margin-bottom: 0px">
+				<button type="button" class="close" data-dismiss="modal">
+					<span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+				<div class="form-group">
+					<div class="action-buttons" style="display:flex">
+						<a class="light-grey id_left"><i class=" fa fa-chevron-left"></i></a>
+						<a class="light-grey id_right"><i class=" fa fa-chevron-right"></i></a>
+					</div>
+					<h5 class="modal-title id_title">CV Ứng Viên <span class="form-group id_fileselect"></span></h5>
+				</div>
+			</div>
+			<div class="modal-body" style="padding-bottom: 0px; padding-top:  0px">
+				<div class="mgr-content" style="height:500px">
+					<div class="mgr-left" style="width: 70%; height: 100%">
+						<form style="height: 100%">
+							<div class="form-group" style="height: 100%">
+								<div class=" id_cv " style="height: 100%">
+									Không có tệp đính kèm nào
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="mgr-right id_detail" style="width: 30%">
+						<form class="form-inline">
+							<div class="form-group  col-md-12">
+								<div class="col-md-5">
+									<label>Tên</label>
+								</div>
+								<div class="col-md-7">
+									<input type="text" class="form-control id_name"/>
+								</div>
+							</div>
+							<div class="form-group  col-md-12">
+								<div class="col-md-5">
+									<label>Email</label>
+								</div>
+								<div class="col-md-7">
+									<input type="text" class="form-control id_cemail"/>
+								</div>
+							</div>
+							<div class="form-group  col-md-12">
+								<label> <input type="checkbox" class="id_star"/> <span class="lbl">Ứng viên tiềm năng</span>
+								</label>
+							</div>
+							<div class="form-group  col-md-12">
+
+								<div class="col-md-5">
+									<label>Giới tính:</label>
+								</div>
+								<div class="col-md-7">
+									<label> <input class="id_gender ace " type="radio" name="sex" value="male">
+										<span class="lbl">nam</span> </label> <label>
+									<input class="id_gender ace " type="radio" name="sex" value="female">
+									<span class="lbl">nữ</span> </label>
+								</div>
+							</div>
+
+							<div class="form-group  col-md-12">
+								<div class="col-md-5">
+									<label>Ứng tuyển vào(<i class="red">*</i>)</label>
+								</div>
+								<div class="col-md-7">
+									<select class="form-control id_job"></select>
+								</div>
+							</div>
+
+							<div class="form-group  col-md-12">
+								<div class="col-md-5">
+									<label>Sđt(<i class="red">*</i>)</label>
+								</div>
+								<div class="col-md-7">
+									<input type="text" class="form-control id_phone"/>
+								</div>
+							</div>
+
+							<div class="form-group  col-md-12">
+								<div class="col-md-5">
+									<label>Ngày sinh (<i class="red">*</i>)</label>
+								</div>
+								<div class="col-md-7">
+									<input type="date" class="form-control id_birth"/>
+								</div>
+							</div>
+
+							<div class="form-group  col-md-12">
+								<label>Kinh nghiệm (<i class="red">*</i>)</label>
+								<textarea class="form-control id_exp" style="height: 150px" placeholder="Mô tả vắn tắt năm và kinh nghiệm của ứng viên"></textarea>
+							</div>
+
+							<div class="form-group  col-md-12">
+								<div class="col-md-5">
+									<label>Trình độ (<i class="red">*</i>) </label>
+								</div>
+								<div class="col-md-7">
+									<select class="form-control id_level">
+										<option value="">Bất kỳ</option>
+										<option value="Trên đại học">Trên đại học</option>
+										<option value="Đại học">Đại học</option>
+										<option value="Cao đẳng">Cao đẳng</option>
+										<option value="Trung cấp">Trung cấp</option>
+										<option value="THPT">THPT</option>
+										<option value="">Chưa nhập</option>
+									</select>
+								</div>
+							</div>
+
+							<div class="form-group  col-md-12">
+								<div class="col-md-5">
+									<label>Công nghệ (<i class="red">*</i>)</label>
+								</div>
+								<div class="col-md-7">
+									<input type="text" class="form-control id_tech" placeholder="Java, C#"/>
+								</div>
+							</div>
+
+							<div class="form-group col-md-12">
+								<div class="col-md-5">
+									<label>Số năm kinh nghiệm (<i class="red">*</i>)</label>
+								</div>
+								<div class="col-md-7">
+									<select class="form-control id_color">
+										<option value="0">Dưới 1 năm</option>
+										<option value="1">Trên 1 năm</option>
+										<option value="2">Trên 2 năm</option>
+										<option value="3">Trên 3 năm</option>
+										<option value="5">Trên 5 năm</option>
+									</select>
+								</div>
+							</div>
+
+							<div class="form-group col-md-12">
+								<div class="col-md-5">
+									<label>Chuyên ngành (<i class="red">*</i>)</label>
+								</div>
+								<div class="col-md-7">
+									<select class="form-control id_spec">
+										<option value="Lập trình viên">Lập trình viên</option>
+										<option value="Nhân viên kinh doanh">Nhân viên kinh doanh</option>
+										<option value="PR / Marketting">PR / Marketting</option>
+										<option value="Hành chính nhân sự">Hành chính nhân sự</option>
+										<option value="QA / TEST">QA / TEST</option>
+										<option value="Kế toán">Kế toán</option>
+										<option value="Khác">Khác</option>
+									</select>
+								</div>
+							</div>
+
+							<div class="form-group col-md-12">
+								<div class="col-md-5">
+									<label>Mức lương mong muốn (<i class="red">*</i>)</label>
+								</div>
+								<div class="col-md-7">
+									<input type="text" class="form-control id_salary">
+									<!--<select class="form-control id_salary">-->
+										<!--<option value="Thỏa thuận">Thỏa thuận</option>-->
+										<!--<option value="Không có">Không có</option>-->
+										<!--<option value="Dưới 1 triệu">1 triệu</option>-->
+										<!--<option value="Dưới 2 triệu">2 triệu</option>-->
+										<!--<option value="Dưới 3 triệu">3 triệu</option>-->
+										<!--<option value="Dưới 4 tr iệu">4 triệu</option>-->
+										<!--<option value="Dưới 5 triệu">5 triệu</option>-->
+										<!--<option value="Dưới 6 triệu">6 triệu</option>-->
+										<!--<option value="Dưới 7 triệu">7 triệu</option>-->
+										<!--<option value="Dưới 8 triệu">8 triệu</option>-->
+										<!--<option value="Dưới 9 triệu">9 triệu</option>-->
+										<!--<option value="Dưới 10 triệu"> 10 triệu</option>-->
+										<!--<option value="Dưới 15 triệu"> 15 triệu</option>-->
+										<!--<option value="Dưới 20 triệu"> 20 triệu</option>-->
+										<!--<option value="Dưới 25 triệu"> 25 triệu</option>-->
+										<!--<option value="Dưới 30 triệu"> 30 triệu</option>-->
+										<!--<option value="Trên 30 triệu">Trên 30 triệu</option>-->
+									<!--</select>-->
+								</div>
+							</div>
+
+							<div class="form-group  col-md-12">
+								<div class="col-md-5">
+									<label>Ngày ứng tuyển </label>
+								</div>
+								<div class="col-md-7">
+									<input type="date" class="form-control id_date"/>
+								</div>
+							</div>
+
+							<div class="form-group  col-md-12">
+								<label>Ghi chú</label>
+								<div class="id_fieldanchor"></div>
+							</div>
+
+							<div class="form-group col-md-12">
+								<label>IQTEST: <a target="_blank" href="#" class="id_ciqtest">..............</a></label> <br/>
+								<label>ENGTEST: <a target="_blank" href="#" class="id_cengtest">..............</a></label>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="modal-footer" style="margin-top: 0px">
+				<button type="button" class="btn btn-default id_trash" data-dismiss="modal"><i class="fa fa-trash"></i> Rác
+				</button>
+				<button type="button" class="btn btn-primary id_tranfer"><i class="fa fa-refresh"></i>Chuyển
+				</button>
+				<button type="button" class="btn btn-default pull-left" data-dismiss="modal">Hủy</button>
+				<button type="button" class="btn btn-primary id_save">Lưu</button>
+				<button type="button" class="btn btn-danger id_nexxt">Tiếp</button>
+			</div>
+		</div>
+	</div>
+
+	<div class="hidden">
+		<div class="id_header">
+			<div class="input-group ">
+				<span class="input-icon">
+					<input type="text" id="form-field" class="id_search" placeholder="Type your query">
+					<i class="fa fa-search" style="margin-top:5px"></i>
+				</span>
+
+				<div class="input-group-btn">
+
+					<label class="btn id_insert btn-sm"> <i class="fa fa-plus fa fa-on-right bigger-110"></i> </label>
+					<label class="btn id_remove btn-sm"> <i class="fa fa-minus fa fa-on-right bigger-110"></i> </label>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</div>

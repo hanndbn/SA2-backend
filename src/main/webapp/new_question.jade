@@ -1,0 +1,27 @@
+.modal(tabindex='-1', role='dialog')
+	.modal-dialog
+		.modal-content
+			.modal-header
+				button.close(type='button', data-dismiss='modal', aria-hidden='true') &times;
+				h4.id_errorTitle.modal-title Create new question
+			.modal-body.id_title
+				.form-group
+					label Câu hỏi
+					.id_content
+				.form-group
+					label
+						| Đáp án
+						i(style:"color: gray") (Mỗi dòng là một phương án lựa chọn, đáp án là phương án ghi ở dòng đầu tiên)
+					textarea.id_choose.form-control(type="text",rows='6', style("width:100%"))
+				.form-group
+					label Độ khó
+					select.form-control.id_weight
+						option(value="1") 1. Trung bình
+						option(value="2") 2. Khó
+						option(value="3") 3. Rất khó
+			.modal-footer
+				button.btn.btn-default.id_clear(type='button') Xóa trống
+				button.btn.btn-default(type='button', data-dismiss='modal') Hủy bỏ
+				button.btn.btn-primary.id_save(type='button') 
+					span.icon-save
+					| &nbsp; Lưu

@@ -1,0 +1,73 @@
+div
+	.id_phase0
+		.container-fluid
+			.container
+				.row
+					.col-sm-12(style="background-color:whitesmoke")
+						code.hidden
+							| Đăng cách đây 
+							span.id_date
+						p.hidden Đã có 
+							span.id_quan
+							|  hồ sơ ứng tuyển
+						h2(style="text-align:center").id_title
+					.col-sm-12
+						h2
+							span.icon-flag(style="display: block;") 
+							| Mô tả công việc
+						.id_jobdesc
+					.col-sm-12
+						h2
+							span.icon-clipboard(style="display: block;") 
+							| Yêu cầu
+						.id_req
+					.col-sm-12
+						h2
+							span.icon-moneybag(style="display: block;")
+							| Quyền lợi
+						.id_int
+		.container-fluid.cvupload_black
+			.container
+					.row
+						.col-sm-12
+							button.btn.btn-danger.center-block.id_apply.btn-lg
+								span.icon-bolt2(style="display: block;")
+								| Ứng tuyển
+	.container-fluid.cvupload_black.id_phase1.hidden
+		.row
+			.form-horizontal.col-md-4.col-md-offset-4
+				.form-group
+					label Họ tên
+					input.id_name.form-control(type="text",placeholder="Nguyễn Văn A")
+				.form-group
+					label Email
+					input.id_email.form-control(type="text",placeholder="nguyenvana@gmail.com")
+				.form-group
+					.id_requiredFields
+				.form-group
+					p Bạn có thể gửi hồ sơ dưới dạng tệp tin hoặc link.
+					p Mẫu hồ sơ có thể được tải   
+							a(href="template/CV.doc") tại đây
+							| . Tuy nhiên bạn không nhất thiết phải làm theo mẫu, chúng tôi khuyến khích bạn trình bày hồ sơ cá nhân sáng tạo theo phong cách riêng của mình.
+				.form-group(style="background-color:whitesmoke;padding-top:10px;padding-bottom:10px")
+						input(type="radio", name="cvtype",checked).id_optiondoccv 
+						span(style="font-size:x-large") &nbsp; Tệp tin hồ sơ
+						p (định dạng docx, doc, pdf, odt, ppt, png, jpg, rar, dung lượng tối đa là 50MB)
+						form.id_docform
+							input.id_filecv.form-control.col-md-10(type="file", name="doccv")
+				.form-group(style="background-color:whitesmoke;padding-top:10px;padding-bottom:10px")
+						input(type="radio", name="cvtype").id_optionlinkcv 
+						span(style="font-size:x-large") &nbsp; Đường link tới hồ sơ ứng tuyển
+						p bạn có thể trình bày CV bằng một trang web, một video trên mạng youtube, ...
+						form.id_linkform(class="has-feedback")
+							input.id_linkcv.form-control.col-md-10(type="text", name="linkcv",disabled="true")
+							span.fa.form-control-feedback.id_linkcvres
+				.row
+					.id_captcha
+					button.col-md-4.pull-right.btn.btn-danger.id_cvsubmit.btn-lg(style="margin-top:46px")
+						span.icon-paperplane(style="display: block;") 
+						| Gửi
+					
+	.container-fluid.id_phase2.col-md-12.hidden(style="margin-top: 100px;background-color: whitesmoke;")
+		.container
+			p Cảm ơn bạn đã gửi CV, chúng tôi sẽ gửi mail xác nhận tới hòm thư của bạn sớm nhất có thể.

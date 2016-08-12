@@ -1,0 +1,29 @@
+div
+	.row
+		.col-xs-12
+			button.btn.id_new
+				span.icon-plus
+				|  Tạo mới
+			button.btn.id_import
+				span.fa.fa-download
+				|  Import	
+			a.btn.id_export(target="_blank")
+				span.fa.fa-upload
+	.row.id_table
+	.row
+		.id_pagi
+	.id_newmodal
+	.id_importmodal.modal(tabindex='-1', role='dialog')
+		.modal-dialog
+			.modal-content
+				.modal-header
+					button.close(type='button', data-dismiss='modal', aria-hidden='true') &times;
+					h4 Nhap du lieu
+				.modal-body.id_title Nhap du cau hoi
+					form.id_importform
+							input.id_file.form-control(type="file", name="file")
+				.modal-footer
+					button.btn.btn-default(type='button', data-dismiss='modal') Hủy bỏ
+					button.btn.btn-primary.id_save(type='button') 
+						span.icon-save
+						| &nbsp; Lưu

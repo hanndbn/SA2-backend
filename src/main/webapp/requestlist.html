@@ -1,0 +1,18 @@
+<div><!--div(href="#", style="width:100%; height:139px; background: url('res/Image/header.jpg') no-repeat;background-position:center")--><ul id="thumbnails"><li><a href="#slide1"></a><img 1="1" src="assets/img/image-1.jpg" alt="alt" this="This" is="is" caption="caption"/><!--a(href='#link') Even with links!--><!--| "--></li><li><a href="#slide2"></a><img src="assets/img/image-2.jpg" alt="This is caption 2"/></li><li><a href="#slide3"></a><img src="assets/img/image-3.jpg" alt=""/></li><li><a href="#slide4"></a><img src="assets/img/image-4.jpg" alt=""/></li><div class="thumb-box"><ul class="thumbs"><li><a href="#1" data-slide="1"></a><img 1="1" src="assets/img/image-1.jpg" alt="alt" this="This" is="is" caption="caption"/><!--a(href='#link') Even with links!--><!--| "--></li><li><a href="#2" data-slide="2"></a><img src="assets/img/image-2.jpg" alt=""/></li><li><a href="#3" data-slide="3"><img src="assets/img/image-3.jpg" alt=""/></a></li><li><a href="#4" data-slide="4"><img src="assets/img/image-4.jpg" alt=""/></a></li></ul></div></ul><script>var thumbs = jQuery('#thumbnails').slippry({
+// general elements & wrapper
+slippryWrapper: '<div class="slippry_box thumbnails" />',
+// options
+transition: 'horizontal',
+pager: false,
+auto: false,
+onSlideBefore: function (el, index_old, index_new) {
+jQuery('.thumbs a img').removeClass('active');
+jQuery('img', jQuery('.thumbs a')[index_new]).addClass('active');
+}
+});
+
+jQuery('.thumbs a').click(function () {
+thumbs.goToSlide($(this).data('slide'));
+return false;
+});</script><div class="container"><div style="margin-top:30px" class="row"><div class="form-horizontal col-md-12"><div class="col-md-3 form-group has-feedback pull-right"><input class="id_search form-control"/><span class="fa fa-search form-control-feedback canclick"></span></div><!--.pull-right.col-md-2--><!--	button.btn-md.btn-danger.form-control.id_applybtn--><!--		span.fa.fa-sign-in--><!--		|  &nbsp;&nbsp; vị trí khác--></div></div><div class="row id_content"><div class="col-md-12 hidden id_defjob"><div class="job"><a style="margin-top:10px; margin-bottom:20px;text-decoration:none" class="id_details"><div class="id_title"></div></a><code class="hidden id_date"></code><div><span class="fa fa-folder"></span>&nbsp;Đơn vị: <span class="id_unit"></span>&nbsp;</div><div class="id_jobdesc"></div><div class="hidden"><span style="color:white;background-color:green" class="fa fa-check"></span>&nbsp;
+Đã có <span class="id_apply"></span> hồ sơ</div></div></div></div><div class="id_pagi"></div></div></div>

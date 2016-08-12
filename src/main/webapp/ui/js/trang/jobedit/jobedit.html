@@ -1,0 +1,164 @@
+﻿<div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+	<div class="modal-dialog " style="width: 50%">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">
+					<span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+				<h4 class="modal-title idmodal_title">Tin tuyển dụng</h4>
+			</div>
+			<div class="modal-body">
+
+				<ul class="nav nav-tabs" role="tablist">
+					<li class="id_infotab active">
+						<a href="#">Thông tin</a>
+					</li>
+
+					<li class="id_settingtab" onclick="">
+						<a href="#">Thiết lập</a>
+					</li>
+				</ul>
+
+				<form class=" row id_infoform form">
+					<div class="form-group row">
+						<div class="col-md-3">
+							<img class="if_propic" style="width: 100%"/>
+						</div>
+						<div class="col-md-9">
+							<label class=" col-md-8">Tiêu đề
+								<input class="form-control id_title" type="text" placeholder="Tiêu đề"/></label>
+
+							<label class="col-md-4">Trạng thái <select class="form-control id_state">
+								<option value="1">Đang lên kế hoạch</option>
+								<option value="2">Đang tuyển</option>
+								<option value="3">Đã đóng</option>
+								<option value="4">Giữ mở</option>
+							</select></label>
+
+							<label class="col-md-12">Ảnh đại diện
+								<input class="form-control id_picture" type="text" placeholder="Link ảnh đại diện"/></label>
+
+							<label class="col-md-12">CV mẫu
+								<input class="form-control id_cvform" type="text" placeholder="Link cv mẫu"/>
+							</label>
+
+						</div>
+					</div>
+
+					<div class="row">
+
+						<div class="form-group col-md-6">
+							<label>Thời gian bắt đầu</label>
+							<input class="form-control id_opendate" type="date"/>
+						</div>
+
+						<div class="form-group col-md-6">
+							<label>Thời gian kết thúc</label>
+							<input class="form-control id_enddate" type="date"/>
+						</div>
+
+					</div>
+					<div class="row">
+						<div class="form-group col-md-2">
+							<label>Đơn vị <select class="form-control id_org">
+								<option value="1">TVG</option>
+								<option value="2">TVO</option>
+								<option value="3">TVC</option>
+								<option value="4">TVB</option>
+								<option value="5">TVi</option>
+								<option value="6">TVS</option>
+								<option value="7">MCC</option>
+								<option value="8">TVT</option>
+							</select></label>
+						</div>
+						<div class="form-group col-md-3">
+							<label>Mức lương
+								<input class="form-control id_salary" type="text" placeholder="mức lương mong muốn"/></label>
+						</div>
+
+						<div class="form-group col-md-2">
+							<label>Số lượng
+								<input class="form-control id_quantity" type="text" placeholder="số lượng cần tuyển"/></label>
+
+						</div>
+
+						<div class="form-group col-md-3 ">
+							<label>Loại công việc <select class="form-control id_category">
+								<option value="0">Part hoặc fulltime</option>
+								<option value="1">Partime</option>
+								<option value="2">Fulltime</option>
+								<option value="3">Thực tập sinh</option>
+							</select></label>
+						</div>
+
+						<div class="form-group col-md-2">
+							<label>Địa điểm <select class="form-control id_jobcontact">
+								<option value="Bất kỳ">Bất kỳ</option>
+								<option value="Hà Nội">Hà nội</option>
+								<option value="Hồ Chí Minh">Hồ Chí Minh</option>
+							</select></label>
+						</div>
+					</div>
+					<div class="row">
+						<div class="form-group col-md-12">
+							<label>Mô tả công việc</label>
+							<textarea rows="3" class="form-control id_jobdesc" placeholder="Mô tả công việc"></textarea>
+						</div>
+					</div>
+					<div class="row">
+						<div class="form-group col-md-12">
+							<label>Quyền lợi</label>
+							<textarea rows="3" class="form-control id_jobint" placeholder="Quyền lợi của ứng viên khi tham gia"></textarea>
+						</div>
+					</div>
+					<div class="row">
+						<div class="form-group col-md-12">
+							<label>Yêu cầu</label>
+							<textarea class="form-control id_attachment" placeholder="Kinh nghiệm 3 năm PHP, ..."></textarea>
+						</div>
+					</div>
+					<div class="row">
+						<div class="form-group col-md-12">
+							<label>Thông tin bắt buộc</label>
+
+							<div class="id_fieldanchor hidden"></div>
+						</div>
+					</div>
+
+				</form>
+
+				<form class="row id_settingform form-inline" style="display:none">
+					<div class="form-group col-md-12">
+						<label>Thư phản hồi nhận CV</label>
+						<input type="text" class="form-control id_rcvmailt" placeholder="tiêu đề"/>
+						<textarea rows="5" class="form-control id_rcvmail" placeholder="Nội dung thư"></textarea>
+					</div>
+
+					<div class="form-group col-md-12">
+						<label>Thư gửi bài test</label>
+						<input type="text" class="form-control id_testmailt" placeholder="tiêu đề"/>
+						<textarea rows="5" class="form-control id_testmail" placeholder="Nội dung thư"></textarea>
+					</div>
+
+					<div class="form-group col-md-12">
+						<label>Thư thông báo kết quả</label>
+						<input type="text" class="form-control id_resmailt" placeholder="tiêu đề"/>
+						<textarea rows="5" class="form-control id_resmail" placeholder="Nội dung thư"></textarea>
+					</div>
+
+					<div class="form-group col-md-12">
+						<label>Thư từ chối</label>
+						<input type="text" class="form-control id_rejectmailt" placeholder="tiêu đề"/>
+						<textarea rows="5" class="form-control id_rejectmail" placeholder="Nội dung thư"></textarea>
+					</div>
+				</form>
+			</div>
+			<div class="modal-footer  ">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Hủy</button>
+				<button type="button" class="btn btn-primary hidden id_submit">Tạo</button>
+				<button type="button" class="btn btn-primary hidden id_save">Lưu</button>
+			</div>
+		</div>
+
+	</div>
+
+</div>

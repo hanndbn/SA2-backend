@@ -1,0 +1,437 @@
+﻿@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Open Sans'), local('OpenSans'), url(fonts/opensans.woff) format('woff');
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    text-shadow: 0px 0px 2px rgba(150, 150, 150, 0.27);
+    font-family: 'Open Sans', sans-serif;
+}
+
+.text-center {
+    text-align: center
+}
+
+h1 {
+    font-weight: 400;
+}
+
+h2 {
+    font-weight: 300;
+}
+
+h3 {
+    font-weight: 200;
+}
+
+.navbar-default {
+    background-color: #FDFDFD;
+    border: 1px solid whitesmoke;
+}
+
+.dropdown-menu > li > a {
+    cursor: pointer;
+}
+
+.navbar-nav > li > a {
+    cursor: pointer;
+    padding: 5px 5px 5px 5px;
+}
+
+.starrating_higlight {
+    color: #5cb85c;
+}
+
+.id_inputex:focus {
+    -webkit-transition: background 200ms ease;
+    -moz-transition: background 200ms ease;
+    -ms-transition: background 200ms ease;
+    -o-transition: background 200ms ease;
+    transition: background 200ms ease;
+    background-color: ivory;
+    border: 1px solid burlywood;
+}
+
+.id_inputex {
+    -webkit-transition: background 200ms ease;
+    -moz-transition: background 200ms ease;
+    -ms-transition: background 200ms ease;
+    -o-transition: background 200ms ease;
+    transition: background 200ms ease;
+    border: 1px dashed burlywood;
+    background-color: transparent;
+}
+
+.numberinput {
+    width: 40px;
+}
+
+.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
+    padding: 8px;
+    line-height: 1.42857143;
+    vertical-align: middle;
+    border-top: 1px solid #ddd;
+}
+
+.id_sidebar {
+    text-align: right;
+}
+
+.unsaved {
+    background-color: #E7E7A4 !important;
+}
+
+.starrating_superhiglight {
+
+}
+
+.form-control[disabled], .form-control[readonly], fieldset[disabled] .form-control {
+    cursor: default;
+    background-color: transparent;
+}
+
+.id_sidebar ul {
+    padding: 5px;
+}
+
+.btn-default {
+    border-color: #F7F7F7;
+}
+
+.id_sidebar li {
+    display: block;
+    list-style-type: none;
+}
+
+.id_sidebar a {
+    padding: 5px;
+    color: #333;
+    display: block;
+}
+
+.id_sidebar a:hover {
+    text-decoration: none;
+}
+
+.id_sidebar li :hover {
+    background-color: #eee;
+}
+
+.id_voting .id_up:hover {
+    color: green;
+
+}
+
+.id_voting .id_down:hover {
+    color: red;
+
+}
+
+.emptyanswer {
+    background-color: red;
+}
+
+.arrow {
+    float: right;
+}
+
+.glyphicon.arrow:before {
+    content: "\e079";
+}
+
+.active > a > .glyphicon.arrow:before {
+    content: "\e114";
+}
+
+.fa.arrow:before {
+    content: "\f104";
+}
+
+.active > a > .fa.arrow:before {
+    content: "\f107";
+}
+
+.plus-times {
+    float: right;
+}
+
+.fa.plus-times:before {
+    content: "\f067";
+}
+
+.active > a > .fa.plus-times {
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.plus-minus {
+    float: right;
+}
+
+.fa.plus-minus:before {
+    content: "\f067";
+}
+
+.active > a > .fa.plus-minus:before {
+    content: "\f068";
+}
+
+.btn-danger:hover, .btn-danger:focus, .btn-danger:active, .btn-danger.active, .open .dropdown-toggle.btn-danger {
+    color: #fff;
+    background-color: #d2322d;
+    border-color: #ac2925;
+}
+
+.onoffswitch {
+    position: relative;
+    width: 61px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+.onoffswitch-checkbox {
+    display: none;
+}
+
+.onoffswitch-label {
+    display: block;
+    overflow: hidden;
+    cursor: pointer;
+    border: 2px solid #EBEBEB;
+    border-radius: 0px;
+}
+
+.onoffswitch-inner {
+    width: 200%;
+    margin-left: -100%;
+    -moz-transition: margin 0.3s ease-in 0s;
+    -webkit-transition: margin 0.3s ease-in 0s;
+    -o-transition: margin 0.3s ease-in 0s;
+    transition: margin 0.3s ease-in 0s;
+}
+
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+    float: left;
+    width: 50%;
+    height: 16px;
+    padding: 0;
+    line-height: 16px;
+    font-size: 14px;
+    color: white;
+    font-family: Trebuchet, Arial, sans-serif;
+    font-weight: bold;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.onoffswitch-inner:before {
+    content: "ON";
+    padding-left: 7px;
+    background-color: #68DE6C;
+    color: #FFFFFF;
+}
+
+.onoffswitch-inner:after {
+    content: "OFF";
+    padding-right: 7px;
+    background-color: #F2F2F2;
+    color: #666666;
+    text-align: right;
+}
+
+.onoffswitch-switch {
+    width: 18px;
+    margin: -1px;
+    background: #EBEBEB;
+    border: 2px solid #EBEBEB;
+    border-radius: 0px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 41px;
+    -moz-transition: all 0.3s ease-in 0s;
+    -webkit-transition: all 0.3s ease-in 0s;
+    -o-transition: all 0.3s ease-in 0s;
+    transition: all 0.3s ease-in 0s;
+}
+
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+}
+
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+    right: 0px;
+}
+
+.id_bagcontainer {
+    padding-left: 0px;
+}
+
+.bag {
+    padding: 5px;
+    background-color: #fcfcfc;
+    margin-right: 2px;
+}
+
+.bag:hover {
+    background-color: #ccc;
+}
+
+.focusedBag {
+    background-color: #f0f0f0;
+    -webkit-transition: background-color 0.2s ease-in;
+    -moz-transition: background-color 0.2s ease-in;
+    -o-transition: background-color 0.2s ease-in;
+    transition: background-color 0.2s ease-in;
+}
+
+.cvupload_black {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #fafafa;
+}
+
+h1, h2 {
+    display: block;
+}
+
+.cvupload_black label, .cvupload_black p {
+    font-weight: normal;
+    color: black;
+}
+
+.id_bagcontainer li {
+    display: inline-block;
+    list-style-type: none;
+}
+
+.cvupload_black input {
+    border: 1px dashed black;
+    background-color: transparent;
+    color: #333;
+}
+
+.tablerow {
+    background-color: coral;
+    -webkit-transition: background 200ms linear;
+    -moz-transition: background 200ms linear;
+    -ms-transition: background 200ms linear;
+    -o-transition: background 200ms linear;
+    transition: background 200ms linear;
+}
+
+.tablerow.loaded {
+    background-color: white;
+}
+
+.table-striped > tbody > tr:nth-child(odd) > td, .table-striped > tbody > tr:nth-child(odd) > th {
+    background-color: coral;
+    -webkit-transition: background 200ms linear;
+    -moz-transition: background 200ms linear;
+    -ms-transition: background 200ms linear;
+    -o-transition: background 200ms linear;
+    transition: background 200ms linear;
+}
+
+.table-striped > tbody > tr.loaded:nth-child(odd) > td, .table-striped > tbody > tr.loaded:nth-child(odd) > th {
+    background-color: #f9f9f9;
+}
+
+.table-striped > tbody > tr > th {
+    background-color: #f9f9f9 !important;
+}
+
+.draggingBag {
+    color: red;
+}
+
+.id_menu > li > a {
+    word-wrap: break-word;
+    white-space: -moz-pre-wrap;
+    white-space: pre-wrap;
+    width: 250px;
+}
+
+li.active {
+    background-color: ghostwhite;
+}
+
+.but:hover {
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+}
+
+.but {
+    -webkit-transition: color 200ms linear;
+    -moz-transition: color 200ms linear;
+    -ms-transition: color 200ms linear;
+    -o-transition: color 200ms linear;
+    transition: color 200ms linear;
+
+    margin-left: 5px;
+    color: #555;
+
+}
+
+
+.job
+{
+    border: 1px dashed gray;
+    margin-top:10px;
+    margin-bottom:10px;
+    padding: 10px;
+}
+
+
+
+.job .id_title
+{
+    cursor: pointer;
+    text-decoration: none;
+    color: #333;
+    background-color: whitesmoke;
+    font-size: xx-large;
+}
+
+.canclick
+{
+    color: gray;
+}
+
+.canclick:hover
+{
+    color : black;
+}
+
+ul.nav.navbar-nav.navbar-right > li 
+{
+    color: #aaa;
+    margin-top: 15px;
+    margin-right: 20px;
+    margin-left: 10px;
+
+   -o-transition:color 1s ease-out;
+  -ms-transition:color 1s ease-out;
+  -moz-transition:color 1s ease-out;
+  -webkit-transition:color 1s ease-out;
+  /* ...and now override with proper CSS property */
+  transition:color 1s ease-out;
+}
+
+.loading
+{
+    border: 1px dashed #ffd800;
+}

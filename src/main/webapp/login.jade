@@ -1,0 +1,28 @@
+.container-fluid(style="padding-top: 50px")
+	.row
+		.col-md-2
+		.col-md-8.id_page
+			.row
+				.col-sm-6(style="background-color:whitesmoke")
+					img.center-block(src="res/Image/login.png", style="padding-top:40px;padding-bottom:40px;")
+				form.col-sm-6.row.form
+					.col-sm-12
+						h1.text-center Đăng nhập
+					.col-sm-12.form-group
+						.input-group
+							span.input-group-addon
+								span.icon-user2
+							input.form-control.id_usernameTb(type="text" ,placeholder="tên đăng nhập" )
+					.col-sm-12.form-group
+						.input-group
+							span.input-group-addon
+								span.icon-lock
+							input.form-control.id_passwordTb(type="password" ,placeholder="mật khẩu" )
+					.col-md-12.form-group
+						button.pull-right.id_loginBt.btn.btn-danger.btn-lg(type='button', style="margin-top:40px")
+							span.icon-signin(style="margin-right:20px")
+							|  Đăng nhập
+		.col-md-2
+
+
+

@@ -1,0 +1,36 @@
+.modal(tabindex='-1', role='dialog')
+	.modal-dialog
+		.modal-content
+			.modal-header
+				button.close(type='button', data-dismiss='modal', aria-hidden='true') &times;
+				h4.id_errorTitle.modal-title Create new request
+			.modal-body.id_title.form-horizontal
+				.form-group.row
+					.col-sm-2
+						label Title
+					.col-sm-10
+						input.id_titleTb(type="text").form-control
+				.form-group.row
+					.col-sm-2
+						label Quantity
+					.col-sm-10
+						input.id_quantity(type="text").form-control
+				.form-group.row
+					.col-sm-2
+						label Job description
+					.col-sm-10
+						.id_jobdesc
+				.form-group.row
+					.col-sm-2
+						label Interest
+					.col-sm-10
+						.id_inte
+				.form-group.row
+					.col-sm-2
+						label Requirements
+					.col-sm-10
+						.id_req
+			.modal-footer
+				button.btn.btn-default.id_clear(type='button') Clear
+				button.btn.btn-default(type='button', data-dismiss='modal') Cancel
+				button.btn.btn-primary.id_save(type='button') Save

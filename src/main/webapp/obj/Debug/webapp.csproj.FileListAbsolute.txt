@@ -1,0 +1,6 @@
+E:\workspace\HRWeb\src\main\webapp\obj\Debug\webapp.csprojResolveAssemblyReference.cache
+E:\workspace\HRWeb\src\main\webapp\bin\webapp.dll.config
+E:\workspace\HRWeb\src\main\webapp\bin\webapp.dll
+E:\workspace\HRWeb\src\main\webapp\bin\webapp.pdb
+E:\workspace\HRWeb\src\main\webapp\obj\Debug\webapp.dll
+E:\workspace\HRWeb\src\main\webapp\obj\Debug\webapp.pdb

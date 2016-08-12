@@ -1,0 +1,20 @@
+.row
+	.col-xs-9
+		nav.navbar.navbar-inverse
+.row
+	.col-xs-9
+		include header.jade
+.row
+	.col-md-3
+		include sidebar.jade
+	.col-md-9
+		block content
+.row
+	block footer
+.row
+script(src='res/jquery.metisMenu.js')
+script(src='header.js')
+script(src='sidebar.js')
+script.
+	var sidebar = new Sidebar.Plugin(document)
+

@@ -1,0 +1,6 @@
+E:\workspace\tvi\SA2\SpeedyApply2\src\main\webapp\ui\bin\ui.dll.config
+E:\workspace\tvi\SA2\SpeedyApply2\src\main\webapp\ui\bin\ui.dll
+E:\workspace\tvi\SA2\SpeedyApply2\src\main\webapp\ui\bin\ui.pdb
+E:\workspace\tvi\SA2\SpeedyApply2\src\main\webapp\ui\obj\Release\ui.csprojResolveAssemblyReference.cache
+E:\workspace\tvi\SA2\SpeedyApply2\src\main\webapp\ui\obj\Release\ui.dll
+E:\workspace\tvi\SA2\SpeedyApply2\src\main\webapp\ui\obj\Release\ui.pdb

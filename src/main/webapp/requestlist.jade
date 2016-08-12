@@ -1,0 +1,80 @@
+div
+	//div(href="#", style="width:100%; height:139px; background: url('res/Image/header.jpg') no-repeat;background-position:center")
+	ul#thumbnails
+		li
+			a(href='#slide1')
+			img(1='1', src='assets/img/image-1.jpg', alt='alt', this='This', is='is', caption='caption')
+			//a(href='#link') Even with links!
+			//| "
+		li
+			a(href='#slide2')
+			img(src='assets/img/image-2.jpg', alt='This is caption 2')
+		li
+			a(href='#slide3')
+			img(src='assets/img/image-3.jpg', alt='')
+		li
+			a(href='#slide4')
+			img(src='assets/img/image-4.jpg', alt='')
+		.thumb-box
+			ul.thumbs
+				li
+					a(href='#1', data-slide='1')
+					img(1='1', src='assets/img/image-1.jpg', alt='alt', this='This', is='is', caption='caption')
+					//a(href='#link') Even with links!
+					//| "
+				li
+					a(href='#2', data-slide='2')
+					img(src='assets/img/image-2.jpg', alt='')
+				li
+					a(href='#3', data-slide='3')
+						img(src='assets/img/image-3.jpg', alt='')
+				li
+					a(href='#4', data-slide='4')
+						img(src='assets/img/image-4.jpg', alt='')
+	script.
+		var thumbs = jQuery('#thumbnails').slippry({
+		// general elements & wrapper
+		slippryWrapper: '<div class="slippry_box thumbnails" />',
+		// options
+		transition: 'horizontal',
+		pager: false,
+		auto: false,
+		onSlideBefore: function (el, index_old, index_new) {
+		jQuery('.thumbs a img').removeClass('active');
+		jQuery('img', jQuery('.thumbs a')[index_new]).addClass('active');
+		}
+		});
+
+		jQuery('.thumbs a').click(function () {
+		thumbs.goToSlide($(this).data('slide'));
+		return false;
+		});
+	div.container
+		.row(style="margin-top:30px")
+			div.form-horizontal.col-md-12
+					.col-md-3.form-group.has-feedback.pull-right
+						input.id_search.form-control
+						span.fa.fa-search.form-control-feedback.canclick
+					//.pull-right.col-md-2
+					//	button.btn-md.btn-danger.form-control.id_applybtn
+					//		span.fa.fa-sign-in
+					//		|  &nbsp;&nbsp; vị trí khác
+		.row.id_content
+			div.col-md-12.hidden.id_defjob
+				div.job
+					a(style="margin-top:10px; margin-bottom:20px;text-decoration:none").id_details
+						div.id_title
+					code.hidden.id_date
+					div
+						span.fa.fa-folder
+						| &nbsp;Đơn vị: 
+						span.id_unit
+						| &nbsp;
+					.id_jobdesc
+					div.hidden
+						span.fa.fa-check(style="color:white;background-color:green")
+						| &nbsp;
+						| Đã có 
+						span.id_apply
+						|  hồ sơ
+		div.id_pagi

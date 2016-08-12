@@ -1,0 +1,52 @@
+div(style="padding-top:40px")
+	.id_phase1.col-sm-12.cvupload_black
+		.container
+			.row(style="margin-bottom:40px")
+				.col-sm-12
+					.bg-warning
+						p Chú ý: Để đảm báo tính bảo mật cho bài thi, mỗi link chỉ có thể được sử dụng duy nhất một lần, nếu refresh trình duyệt sau khi nhấn "Bắt Đầu", bài thi sẽ bị khóa !.
+						p Hiện tại, bạn vẫn chưa chính thức làm bài thi nên nếu đóng trình duyệt hoặc refresh thì bài thi <b>không</b> bị khóa.
+						p Nếu gặp khó khăn hoặc lỗi trong quá trình làm bài thi, bạn có thể gửi mail về địa chỉ <i>speedyapply@gmail.com</i>, chúng tôi sẽ xem xét để khôi phục lại bài thi.
+					p Mời bạn điền captcha sau đó nhấn vào nút "Bắt Đầu".
+				.col-sm-12.row
+					.id_captcha
+			.row
+				.col-sm-12
+					button.btn.btn-danger.id_gettest.btn-lg
+						span.icon-star 
+						|  &nbsp; Bắt đầu
+	.id_phase2.hidden.col-sm-12
+		.container
+			.row
+				.progress.progress-striped.active(style="position:fixed; top: 0px; width: 100%; left: 0px; z-index:1000")
+					.progress-bar.id_timeprogress(role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100")
+					span.sr-only 45
+			.row(style="border:1px dashed gray")
+				.col-md-12
+					p
+						| Họ tên: &nbsp;
+						span.id_appname
+					p
+						| Ứng tuyển ngày: &nbsp;
+						span.id_apptime
+					p
+						| Ứng tuyển vào: &nbsp;
+						span.id_apprequest
+			.row
+				.col-md-12
+					.id_title
+			.row
+				.col-md-12
+					.id_questions
+			.row
+				.col-md-12
+					.id_timer
+			.row(style='margin-top:30px')
+				.col-md-12
+					button.btn.id_testsubmit.btn-danger.btn-lg(data-loading-text="Loading...")
+						span.icon-paperplane 
+						| &nbsp; Gửi
+	.col-sm-12
+		.container
+			.row.id_phase3.hidden
+				| Bài kiểm tra đã được gửi thành công, chúng tôi sẽ gửi email thông báo điểm trong thời gian sớm nhất.

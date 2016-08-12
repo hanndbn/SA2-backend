@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <ProjectGuid>{032C26D7-E337-4ECC-8623-A5CE4F0C8343}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <OutputPath>bin</OutputPath>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <DebugType>full</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+    <TypeScriptToolsVersion>0.9</TypeScriptToolsVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="app.css" />
+    <Content Include="default.htm" />
+    <Content Include="question.js" />
+    <Content Include="web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="actionmenu.ts" />
+    <TypeScriptCompile Include="app.ts" />
+    <TypeScriptCompile Include="bagpanel.ts" />
+    <TypeScriptCompile Include="captcha.ts" />
+    <TypeScriptCompile Include="config.ts" />
+    <TypeScriptCompile Include="cv.ts" />
+    <TypeScriptCompile Include="cvcomment.ts" />
+    <TypeScriptCompile Include="cvfield.ts" />
+    <TypeScriptCompile Include="cvmgr.ts" />
+    <TypeScriptCompile Include="cvquickview.ts" />
+    <TypeScriptCompile Include="cvrating.ts" />
+    <TypeScriptCompile Include="cvupload.ts" />
+    <TypeScriptCompile Include="DataTable.ts" />
+    <TypeScriptCompile Include="error.ts" />
+    <TypeScriptCompile Include="errornotify.ts" />
+    <TypeScriptCompile Include="feednotify.ts" />
+    <TypeScriptCompile Include="formdata.d.ts" />
+    <TypeScriptCompile Include="framework.ts" />
+    <TypeScriptCompile Include="header.ts" />
+    <TypeScriptCompile Include="inlinewait.ts" />
+    <TypeScriptCompile Include="jquery.d.ts" />
+    <TypeScriptCompile Include="layout.ts" />
+    <TypeScriptCompile Include="login.ts" />
+    <TypeScriptCompile Include="mail.ts" />
+    <TypeScriptCompile Include="mainlayout.ts" />
+    <TypeScriptCompile Include="new_cvfield.ts" />
+    <TypeScriptCompile Include="new_question.ts" />
+    <TypeScriptCompile Include="new_request.ts" />
+    <TypeScriptCompile Include="pagination.ts" />
+    <TypeScriptCompile Include="password.ts" />
+    <TypeScriptCompile Include="question.ts" />
+    <TypeScriptCompile Include="request.ts" />
+    <TypeScriptCompile Include="requestpicker.ts" />
+    <TypeScriptCompile Include="router.ts" />
+    <TypeScriptCompile Include="sidebar.ts" />
+    <TypeScriptCompile Include="starrating.ts" />
+    <TypeScriptCompile Include="switchbox.ts" />
+    <TypeScriptCompile Include="table.ts" />
+    <TypeScriptCompile Include="test.ts" />
+    <TypeScriptCompile Include="testquestion.ts" />
+    <TypeScriptCompile Include="textbox.ts" />
+    <TypeScriptCompile Include="texteditor.ts" />
+    <TypeScriptCompile Include="timer.ts" />
+    <TypeScriptCompile Include="tvg.ts" />
+    <TypeScriptCompile Include="tvg_requestnew.ts" />
+    <TypeScriptCompile Include="unitheader.ts" />
+    <TypeScriptCompile Include="userheader.ts" />
+    <TypeScriptCompile Include="voting.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="web.Debug.config">
+      <DependentUpon>web.config</DependentUpon>
+    </None>
+    <None Include="web.Release.config">
+      <DependentUpon>web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="applicant\" />
+    <Folder Include="hrteam\" />
+    <Folder Include="tvg\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>webapp</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>4115</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:4115/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
+    <TypeScriptTarget>ES5</TypeScriptTarget>
+    <TypeScriptRemoveComments>false</TypeScriptRemoveComments>
+    <TypeScriptSourceMap>False</TypeScriptSourceMap>
+    <TypeScriptModuleKind>AMD</TypeScriptModuleKind>
+    <TypeScriptCompileOnSaveEnabled>False</TypeScriptCompileOnSaveEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+    <TypeScriptTarget>ES5</TypeScriptTarget>
+    <TypeScriptRemoveComments>true</TypeScriptRemoveComments>
+    <TypeScriptSourceMap>false</TypeScriptSourceMap>
+    <TypeScriptModuleKind>AMD</TypeScriptModuleKind>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(VSToolsPath)\TypeScript\Microsoft.TypeScript.targets')" />
+</Project>

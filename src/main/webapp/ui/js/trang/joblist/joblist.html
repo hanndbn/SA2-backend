@@ -1,0 +1,77 @@
+﻿<div>
+	<form class="jobmgrheader">
+		<div style="padding: 8px; padding-bottom: 0px ">
+			<a class="id_createjob"><i class="fa fa-plus id_createjob"></i> tạo việc</a>
+
+			<div class="action-buttons pull-right">
+				<a class="light-grey hidden"><i class="fa fa-upload"></i> nhập</a>
+				<a class="light-grey hidden"><i class="fa fa-download"></i> xuất</a>
+				<a class="light-grey id_search hidden"><i class="fa fa-search"></i></a>
+				<a class="light-grey id_hideshow"><i class="fa fa-chevron-left"></i></a>
+			</div>
+
+		</div>
+	</form>
+
+	<table>
+		<tbody class="id_jobtem">
+		<tr>
+			<td class="center checkboxcontainer" rowspan="" style="width: 36px">
+				<label>
+					<input type="checkbox" class="ace id_c">
+					<span class="lbl"></span>
+				</label>
+			</td>
+			<td>
+				<div class="action-buttons pull-right">
+					<a class="light-grey id_view hidden" data-original-title="Xem" data-container="body" data-toggle="tooltip" data-placement="bottom"><i class="fa fa-desktop"></i></a>
+					<a class="light-grey id_trash hidden" data-original-title="Xóa" data-container="body" data-toggle="tooltip" data-placement="bottom"><i class="ace-icon fa fa-trash "></i></a>
+					<a class="light-grey id_edit hidden" data-original-title="Sửa thông tin" data-container="body" data-toggle="tooltip" data-placement="bottom"><i class="fa fa-wrench"></i></a>
+					<a class="light-grey id_star" data-original-title="Công việc hot" data-container="body" data-toggle="tooltip" data-placement="bottom"><i class=" fa fa-star "></i></a>
+				</div>
+				<div>
+					<span class="btn-group">
+<span data-toggle="dropdown" class="dropdown-toggle">
+								<i class="fa fa-circle green id_statuscolor" style="vertical-align: text-top;"></i>
+							</span>
+							<ul class="dropdown-menu dropdown-danger">
+								<li class="id_planning">
+									<a>
+										<i class="fa fa-circle red " style="vertical-align: baseline;"></i>
+										Đang lên kế hoạch
+									</a>
+								</li>
+								<li class="id_openning">
+									<a>
+										<i class="fa fa-circle green " style="vertical-align: baseline;"></i>
+										Đang tuyển
+									</a>
+								</li>
+								<li class="id_closed">
+									<a>
+										<i class="fa fa-circle grey " style="vertical-align: baseline;"></i>
+										Đã đóng
+									</a>
+								</li>
+								<li class="id_onhold">
+									<a>
+										<i class="fa fa-circle orange " style="vertical-align: baseline;"></i>
+										Giữ mở
+									</a>
+								</li>
+							</ul>
+						</span>
+					<code style="vertical-align: bottom" class="id_code">????</code>
+
+				</div>
+				<div class="id_jobtemclickable" style="cursor: pointer">
+					<div>
+						<span class=" id_title">????</span> (<span class="id_ncan">50</span>)
+					</div>
+				</div>
+			</td>
+		</tr>
+		</tbody>
+	</table>
+
+</div>

@@ -1,0 +1,6 @@
+E:\workspace\HR\ts\ts\bin\ts.dll.config
+E:\workspace\HR\ts\ts\bin\ts.dll
+E:\workspace\HR\ts\ts\bin\ts.pdb
+E:\workspace\HR\ts\ts\obj\Debug\ts.csprojResolveAssemblyReference.cache
+E:\workspace\HR\ts\ts\obj\Debug\ts.dll
+E:\workspace\HR\ts\ts\obj\Debug\ts.pdb
